@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Tittle}}</title>
+</head>
+<body>
+{{if ge .FinalValue 80}}
+<H1>Hallo Good</H1>
+{{else if ge .FinalValue 60}}}
+<h1>Nice</h1>
+{{else}}
+    <h1>try Again</h1>
+{{end}}
+
+
+</body>
+</html>

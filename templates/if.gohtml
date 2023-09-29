@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{.Tittle}}</title>
 </head>
 <body>
-    <h1>Hello</h1>
-
+{{if .Address.Street}}
+    <h1>Hello {{.Address.Street}}</h1>
+{{else}}
+    <h1>Hello Kosong</h1>
+{{end}}
 </body>
 </html>
